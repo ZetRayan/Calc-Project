@@ -28,8 +28,7 @@ def main(input: str):
             "/" : lambda a,b : a / b,
         }
         return operations[operator](a, b)
-
-        print("Output:\n")    
+        
     except Exception as e:
         print(f"Произошла ошибка: {e}")
         exit()
