@@ -27,10 +27,7 @@ def main(input: str):
             "*" : lambda a,b : a * b,
             "/" : lambda a,b : a / b,
         }
-        try:
-            return operations[operator](a, b)
-        except ValueError as ve:
-            print(f"Произошла ошибка: {ve}") 
+        return operations[operator](a, b)
 
         print("Output:\n")    
     except Exception as e:
