@@ -3,7 +3,7 @@ from math import floor
 
 def main(input: str):
     try:
-        input.replace(" ","")
+        input = input.replace(" ", "")
         
         if len(input)>3: 
             raise ValueError("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)! Операнды должны быть целыми числами от 0 до 9") 
