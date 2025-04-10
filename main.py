@@ -28,7 +28,7 @@ def main(input: str):
         b = input[operator_index+1:]
         
         if a == '' or b == '':
-            raise ValueError("Отсутствует од из апперандов!")
+            raise ValueError("Отсутствует один из опперандов!")
         
         try:
             a = int(a)
